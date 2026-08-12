@@ -21,10 +21,11 @@ runtime dependency, dependency-edge policy, package-version policy, or Hex
 release. Generic consumers such as Mix Workspace Ops load it explicitly and bind
 its portable GitHub identities to operator-owned checkouts.
 
-The 2026-08-11 canonical pass resolved 161 repositories and 578 unique Mix
-applications. It also retained 56 ambiguous or non-application observations in
-the dated snapshot instead of guessing identities. The NSHKR view selects 368
-projects from 43 classified repositories; the global view selects all 578.
+The 2026-08-11 zero-default baseline records 162 repositories and 695 Mix
+projects. Of those, 688 have unique application identities and seven are valid
+non-application workspace roots. The NSHKR view selects 416 projects from 43
+classified repositories; the global view selects all 695. Ambiguous projects
+remain dated evidence instead of receiving guessed identities.
 
 ## Authority
 
@@ -32,7 +33,8 @@ The registry owns only:
 
 - stable repository and Mix-project identities;
 - GitHub coordinates and relative project paths;
-- application identity used to map current Mix dependencies;
+- application identity used to map current Mix dependencies, when the project
+  is an application;
 - project classification tags and operational-profile references;
 - named views over the one global inventory;
 - dated drift and migration evidence.
@@ -71,10 +73,12 @@ Bindings are machine-local and untracked. A normal checkout uses the repository
 basename under the supplied checkout root. Exceptional layouts require an
 explicit operator-owned binding file; they are never encoded in this registry.
 
-The initial snapshot also records the portable migration surface for 51 copied
+The initial snapshot records the portable migration surface for 51 copied
 dependency-source helpers and 50 adjacent configs across 41 canonical
 repositories. It stores repository identities, relative paths, commits, status,
 and content digests—never checkout paths, credentials, or dependency policy.
+The zero-default baseline snapshot records the later example-project and
+non-application-root reconciliation without rewriting that initial evidence.
 
 See [Registry contract](guides/registry_contract.md),
 [Views](guides/views.md), and

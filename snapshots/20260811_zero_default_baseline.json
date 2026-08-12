@@ -1,0 +1,26 @@
+{
+  "schema": "elixir_ecosystem_registry.baseline/v1",
+  "observed_on": "2026-08-11",
+  "registry_sha256": "7e4831b207fc9b0c2c87d672e188c581ab24b0bd6d03977cd7b2cec94fab84a8",
+  "canonical": {
+    "repositories": 162,
+    "projects": 695,
+    "application_projects": 688,
+    "non_application_roots": 7,
+    "example_projects": 110,
+    "nshkr_projects": 416,
+    "nshkr_repositories": 43
+  },
+  "discovery": {
+    "repositories": 160,
+    "projects": 679,
+    "unresolved": 67
+  },
+  "decisions": [
+    "Examples containing real Mix projects are inventory, not generated state.",
+    "Example children do not change a standalone root project identity.",
+    "Non-application workspace roots are canonical targets with null application identity.",
+    "Last-known valid Gust and Spawn rows remain canonical while current metadata is unavailable.",
+    "Ambiguous nested Scout applications remain unresolved; only its unambiguous workspace root is canonical."
+  ]
+}

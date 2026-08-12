@@ -1,0 +1,9 @@
+{
+  "schema": "elixir_ecosystem_registry.profiles/v1",
+  "profiles": [
+    {
+      "id": "default",
+      "description": "Ordinary canonical Mix project using explicit operator binding and repository-owned gates."
+    }
+  ]
+}

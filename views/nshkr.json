@@ -1,0 +1,11 @@
+{
+  "schema": "mix_workspace_ops.view/v1",
+  "id": "nshkr",
+  "description": "The NSHKR platform subset selected from the global registry by classification tag.",
+  "selector": {
+    "tags_any": ["platform.nshkr"],
+    "tags_all": [],
+    "project_ids": [],
+    "exclude_project_ids": []
+  }
+}

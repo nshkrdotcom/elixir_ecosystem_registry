@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Elixir Ecosystem Registry</title>
+  <desc id="desc">A symmetric indigo hexagon containing a connected registry constellation and concentric view arcs.</desc>
+  <defs>
+    <linearGradient id="shell" x1="48" y1="35" x2="208" y2="221" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.48" stop-color="#5133a5"/>
+      <stop offset="1" stop-color="#24164f"/>
+    </linearGradient>
+    <linearGradient id="core" x1="83" y1="78" x2="174" y2="181" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <path d="M128 9 231 68.5v119L128 247 25 187.5v-119Z" fill="url(#shell)" stroke="#c4b5fd" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M128 24 218 76v104l-90 52-90-52V76Z" fill="#0b1020" fill-opacity="0.74" stroke="#7c3aed" stroke-width="2"/>
+  <g fill="none" stroke="url(#core)" stroke-linecap="round" filter="url(#glow)">
+    <path d="M71 103a65 65 0 0 1 114 0" stroke-width="5"/>
+    <path d="M64 128a64 64 0 0 0 128 0" stroke-width="3" stroke-dasharray="4 10"/>
+    <path d="M83 152a52 52 0 0 0 90 0" stroke-width="5"/>
+  </g>
+  <g stroke="#dbeafe" stroke-width="3" stroke-linecap="round">
+    <path d="m128 83-38 39 38 44 39-44Z" fill="#111827" fill-opacity="0.9"/>
+    <path d="M90 122h77M128 83v83" opacity="0.75"/>
+  </g>
+  <g fill="#67e8f9" stroke="#ecfeff" stroke-width="3" filter="url(#glow)">
+    <circle cx="128" cy="83" r="8"/>
+    <circle cx="90" cy="122" r="8"/>
+    <circle cx="167" cy="122" r="8"/>
+    <circle cx="128" cy="166" r="8"/>
+    <circle cx="128" cy="122" r="11" fill="#a78bfa"/>
+  </g>
+</svg>
